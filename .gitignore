@@ -1,0 +1,10 @@
+.idea
+*.pyc
+__pycache__
+*.db
+*.sqlite3
+settings_local.py
+noahenv/
+*.xls
+test*
+.DS_Store

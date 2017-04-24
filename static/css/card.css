@@ -1,0 +1,59 @@
+body {
+    background: #fff;
+    color: #383a3c;
+	font-weight: 400;
+	font-size: 1em;
+	font-family: Calibri, Arial, 'Microsoft YaHei';
+    margin: 0px auto;
+    width: 100%;
+}
+
+.tblheader
+{
+	margin: 0px;
+	border: 0px;
+	width: 1024px;
+}
+
+.canvas-card {
+	position: relative;
+	margin: 0px auto;
+	width: 1024px;
+	background: #333;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center bottom;
+	z-index: 1;
+	cursor: crosshair;
+	border-style: dotted;
+}
+
+.textbutton{
+    display: inline-block;
+	margin: auto 0.2em;
+	padding: 0.25em 1.6em;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	border-radius: 25px;
+	font-size: 100%;
+	border: none;
+	border-color: #383a3c;
+    cursor:pointer;
+}
+
+.navbarfloat{
+    position:relative;
+    margin: 0px auto;
+    height:40px;
+    width:1024px;
+    z-index:999;
+    background-color:rgba(255,255,255,0.3);
+    border-style: outset;
+}
+
+.container cardtest
+{
+	margin: 0px auto;
+}

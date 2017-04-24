@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>安全卡片</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if IE]><script type="text/javascript" src="/static/js/excanvas.js"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" href="/static/css/card.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/xcConfirm.css" />
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="margin: 0px auto">
+    <div class="container cardtest" >
+        <div class="content" style="margin: 0px auto">
+                                <div style="width:1024px;margin: 0px auto">
+                        <p style="text-align:center;line-height:120%;font-weight:bold;font-size:24px;">游戏说明</p>
+                        <div style="font-size:12px"><p>1、请在图片中左键点击漏洞处，红圈定位漏洞。重复点击红圈取消选中</p>
+                            <p>2、完成后点击进入进阶关卡，找出所有漏洞</p>
+                            <p>3、完成所有关卡后点击提交，输入工号，即可查看分数</p>
+                            <p>4、绿圈表示回答正确，红圈回答错误。入门关共有11处漏洞，进阶关有18处漏洞每题1分,满分29分。</p>
+                            <p>5、点击查看排行榜，看当前分数最高前十玩家。相同分数按提交时间先后排序</p>
+                            <p>6、请确保输入正确工号，最后我们将凭工号兑奖，分数最高前50名获得纪念品（环保袋+笔记本)。
+                                前三名还可获得财富派代金券。</p>
+                        </div>
+                    </div>
+            <div id="canvas-card" class="canvas-card">
+                <canvas id="canvas" class="mycanvas"></canvas>
+            </div>
+            <div class="navbarfloat">
+                <table class="tblheader">
+                    <tr>
+                        <td style="font-size:1.1em; text-align: center;vertical-align:bottom; width: 200px">
+                            还有&nbsp;<span id="lblClickCount">0</span>&nbsp;次点击机会
+                        </td>
+                        <td id="player_score" style="font-size:1.2em; text-align: right; vertical-align:bottom; width: 180px">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td style="text-align: center; width: 480px">
+                            <button id="lnkNext" class="textbutton" style="margin-right:40px;" onclick="clickNext()">进&nbsp;阶&nbsp;版</button>
+                            <button id="lnkSubmit" class="textbutton" method="post" style="margin-right:40px;visibility:hidden;">
+                                提&nbsp;&nbsp;交</button>
+                            <button id="lnkViewList" class="textbutton" >查看排行榜</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div><!-- /container -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-text">
+                        <br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/jquery-1.9.1.js"></script>
+    <script src="/static/js/xcConfirm.js"></script>
+    <script src="/static/js/json-2.js"></script>
+    <script type="text/javascript" src="/static/js/show.js"></script>
+</body>
+</html>
