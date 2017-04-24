@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .idea
 *.pyc
 __pycache__
@@ -100,3 +99,4 @@ ENV/
 # Rope project settings
 .ropeproject
 >>>>>>> 8e51ccc0545d11942d794fb6adf2a0acf505f389
+>>>>>>> c5963c7af2e4909cbbffa0b4c7def4ffa594cd06
